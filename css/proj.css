@@ -1,0 +1,526 @@
+/* css reset  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* css varaibles - recommeneded  */
+/* global avriables  */
+:root {
+    --navbar-height: 59px;
+
+}
+
+
+/* navigation bar  */
+#navbar {
+    /* flex box display  */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+
+
+}
+
+
+body {
+    background-color: black;
+    font-size: 19px;
+
+
+}
+
+
+/* logo and image ko bhi flex banayena  */
+
+
+#logo {
+    margin: 10px 34px;
+
+}
+
+
+/* image */
+#lol {
+    width: 130px;
+    height: 130px;
+    filter: invert(100%);
+    margin: 3px px;
+}
+
+
+/* list styling  */
+#navbar ul {
+    display: flex;
+    list-style: none;
+    /* bullets nhi ayenga */
+
+
+
+}
+
+#navbar div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#navbar div div {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#navbar div div:hover {
+    cursor: pointer;
+    background-color: bisque;
+    color: black;
+}
+
+#navbar div img:hover {
+    cursor: cell;
+    animation: abbas 1s ease-in forwards;
+
+
+}
+
+
+/* animation detail */
+@keyframes abbas {
+    from {
+        width: fit-content;
+    }
+
+    to {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+/* padding a me dalenga kukay takay hver kren to a hover hoga  */
+#navbar ul li a {
+    display: block;
+    /* kuka padding deni he  */
+    color: whitesmoke;
+
+
+    padding: 3px 22px;
+    border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* border: 2px solid red ; */
+    /* underline chalijaygei  */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    /* jo conteent upar overlap horha tha wo ajaeyga  */
+    z-index: -1;
+    /* opacity: 0.6; */
+}
+
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: bisque;
+
+}
+
+#navbar {
+    position: relative;
+    /* top:0px; */
+    /* display: flex; */
+    /* stickiy stuff too let the navbarr go down and stick with it  */
+
+
+
+    /* relative */
+    /* jitna cover krega wo -- till its extent  */
+
+}
+
+
+
+/* Home - main page -  section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    /* opacity: 0.8; */
+    /* background-color:rgb(190, 189, 189); */
+    height: 470px;
+}
+
+
+
+/* baackgrund lagane ke liye -> psdueo selector s */
+#home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('../images/villa-3237114_1280.jpg');
+
+
+}
+
+#home div {
+    background-image: url('../images/villa-3237114_1280.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 238, 238);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 15px;
+    opacity: 0.85;
+    border: 2px solid grey;
+}
+
+
+/* utility classes we made  */
+
+.primary {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;;
+}
+
+/* h1 tag  */
+#home h1 {
+    text-align: center;
+
+}
+
+
+#home p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: grey;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* SERVICES */
+
+
+.secondary {
+    font-size: 2.5 rem;
+    padding: 12px;
+    text-align: center;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+
+
+
+
+
+
+
+}
+
+
+#services .box {
+    border: 6px solid rgb(10, 10, 9);
+    position: absolute;
+    left: -5px;
+    background-color: rgb(2, 2, 1);
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+
+
+}
+
+#services .box img {
+    height: 210px;
+    width: 490px;
+    display: block;
+    border: 2px solid grey;
+    margin: auto;
+
+    border-radius: 20px;
+    /* necesasary to display block for margin-auto  */
+
+}
+
+/* our services likha hoga webpage pe  */
+#heading {
+    text-decoration: wavy;
+    /* background-color: black; */
+    border: 6px solid grey;
+    width: 1470px;
+    border-radius: 9px;
+    margin: auto;
+    margin-top: 73px;
+    margin-bottom: -35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+
+    background-image: url('../images/villa-3237114_1280.jpg');
+
+}
+
+#heading:hover {
+    /* color: grey; */
+    /* background-color: black; */
+    background-image: none;
+    background-color: black;
+    color: burlywood;
+    cursor: pointer;
+}
+
+
+#services .box div {
+
+    display: flex;
+
+
+}
+
+
+#services .box p,
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.centre {
+    text-align: center;
+}
+
+
+
+
+
+/* clients section  */
+
+.primaryC {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: rgb(7, 6, 6);
+    text-align: center;
+
+}
+
+#clientSection h2 {
+    margin-top: -72px;
+    border-radius: 9px;
+    background-image: url('../images/villa-3237114_1280.jpg');
+    position: absolute;
+    top: 1257px;
+    color: #efecec;
+    font-size: large;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.8rem;
+    border: 6px solid gray;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 1498px;
+}
+
+#clientSection h2:hover{
+    background-image: none;
+    background-color: black;
+    color:burlywood ;
+
+
+}
+
+/* box which stores client items  */
+.client {
+
+    margin-top: 490px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.client img{
+    height: 170px;
+    width: 300px;
+    margin: 30px;
+}
+
+.client img:hover{
+    cursor:crosshair;
+    filter: invert(100%);
+}
+
+/* POSITION RELATIVE _-> sirf utni jaga lega jitni usko zaroorat ho  */
+
+
+/* #client img {} */
+
+
+
+/* contacts section */
+
+#contact{
+    position: relative;
+    
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* background: url('../images/l.jpg') no-repeat center center/cover; */
+    height: 200px;
+    /* VERY VERY IMP STUFF  */
+
+}
+
+
+
+#contact h2{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.8rem;
+    border: 6px solid gray;
+    color: white;
+    background-image: url('../images/villa-3237114_1280.jpg');
+    border-radius: 9px;
+
+}
+
+#contact h2:hover{
+    background-image: none;
+    background-color: black;
+    color: burlywood;
+    cursor: pointer;
+}
+
+#contactBox{
+    display: flex;
+    justify-content: center
+    ;
+    align-items: center;
+    background-image: url('../images/l.jpg');
+    padding-bottom: 34px;
+
+
+    /*  */
+    padding-top: 34px;
+
+}
+
+#contactBox input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: medium;
+    border-radius: 9px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+#contactBox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: medium;
+}
+
+#contactBox form{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif 
+    ;
+    width: 40%;
+    color: white;
+    font-size: 20px;
+}
+
+/* buttton */
+#btnS{
+    width: 113px;
+    border-radius: 9px;
+    border: 4px solid burlywood;
+    background-color: black;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+
+
+}
+
+#btnS:hover{
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+
+footer{
+    background: rgb(7, 6, 4);
+    color: rgb(255, 255, 255);
+    padding: 9px 20px ;
+    text-align: center;
+    border: 5px solid gray;
+    
+}
+
+
+
+/* smooth scrolling */
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,67 @@
+/* navigation */
+
+#major{
+    background-image: url('../images/villa-3237114_1280.jpg') no-repeat center center/cover;
+
+    position:relative;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#home{
+    /* display: flex; */
+    margin-top: 59px;
+
+
+}
+
+
+
+/* services section  */
+#servicesCont #heading{
+
+    width:max-content;
+
+}
+
+#services .box div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* clients section */
+#clientSection{
+    height: 400px;
+}
+#clientSetion h2{
+    width: -20px;
+    overflow: hidden;
+
+}
+
+/* overflow : hidden -> compatible hojayega  */
+
+
+
+/* contactt us section  */
+
+
+
+
+/* footer */
+
